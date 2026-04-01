@@ -44,8 +44,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Check next to binary
         let d1 = "\(base)/audio"
         if FileManager.default.fileExists(atPath: d1) { return d1 }
-        // Check in KickMyMac dir
-        let d2 = "/Users/admin/Documents/KickMyMac/audio"
+        // Check in home dir
+        let d2 = NSHomeDirectory() + "/Documents/KickMyMac/audio"
         if FileManager.default.fileExists(atPath: d2) { return d2 }
         return d1
     }
