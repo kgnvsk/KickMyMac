@@ -1,0 +1,6 @@
+.DS_Store
+KickMyMac.app/
+KickUI
+audio/*.MP3
+*.MP3
+__pycache__/
